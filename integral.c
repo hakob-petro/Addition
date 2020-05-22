@@ -11,7 +11,7 @@ double f(double x)
 
 double integral(int a, int b, double h)
 {
-	int S = (f(b * h) + f(a * h));
+	int S = (f(b * h) + f(a * h)) / 2;
 	for (int i = a + 1; i < b; i++) 
 	{
 		S += f(i * h);
